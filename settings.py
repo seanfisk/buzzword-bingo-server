@@ -28,7 +28,7 @@ INSTALLED_APPS = (
     'djangoappengine',
 )
 
-STATIC_URL = '/'
+STATIC_URL = '/static/'
 
 MIDDLEWARE_CLASSES = (
     # This loads the index definitions, so it has to come first
