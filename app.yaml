@@ -17,6 +17,10 @@ libraries:
   version: "3.10"
 
 handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
 - url: /_ah/queue/deferred
   script: djangoappengine.deferred.handler.application
   login: admin

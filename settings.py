@@ -20,11 +20,14 @@ INSTALLED_APPS = (
     'djangotoolbox',
     'autoload',
     'dbindexer',
+    'django.contrib.staticfiles',
     'djangorestframework',
 
     # djangoappengine should come last, so it can override a few manage.py commands
     'djangoappengine',
 )
+
+STATIC_URL = '/'
 
 MIDDLEWARE_CLASSES = (
     # This loads the index definitions, so it has to come first
@@ -34,6 +37,11 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
+
+# TEMPLATE_LOADERS = (
+#     'django.template.loaders.filesystem.Loader',
+#     'django.template.loaders.app_directories.Loader',
+# )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
