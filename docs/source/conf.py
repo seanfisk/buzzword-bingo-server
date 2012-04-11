@@ -259,5 +259,6 @@ intersphinx_mapping = {
     'python' : ('http://docs.python.org/', None),
     'sphinx': ('http://sphinx.pocoo.org/', None),
     'django' : ('https://docs.djangoproject.com/en/1.3/',
-                'https://docs.djangoproject.com/en/1.3/_objects/')
+                'https://docs.djangoproject.com/en/1.3/_objects/'),
+    'djangorestframework' : ('http://django-rest-framework.org/', None)
     }
