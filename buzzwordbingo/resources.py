@@ -1,4 +1,4 @@
-from bingo.models import Buzzword, WinCondition, Board
+from buzzwordbingo.models import Buzzword, WinCondition, Board
 from djangorestframework.resources import ModelResource
 
 class BuzzwordResource(ModelResource):

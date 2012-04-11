@@ -1,9 +1,9 @@
 from django.conf.urls.defaults import patterns, url
 from djangorestframework.resources import ModelResource
 from djangorestframework.views import ListOrCreateModelView, InstanceModelView
-from bingo.resources import (BuzzwordResource, WinConditionResource,
-                             BoardResource)
-from bingo.views import BuzzwordBingoView
+from buzzwordbingo.resources import (BuzzwordResource, WinConditionResource,
+                                     BoardResource)
+from buzzwordbingo.views import BuzzwordBingoView
 
 handler500 = 'djangotoolbox.errorviews.server_error'
 
@@ -31,4 +31,4 @@ urlpatterns = patterns('',
     ('^_ah/warmup$', 'djangoappengine.views.warmup'),
     ('^$', 'django.views.generic.simple.direct_to_template',
      {'template': 'home.html'}),
-)
+)    
