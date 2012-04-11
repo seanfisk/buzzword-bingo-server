@@ -1,16 +1,10 @@
-# vagrant hash file
-.vagrant
-
 # Emacs rope configuration
 .ropeproject
-
-# Credentials file (usually named credentials)
-credentials
 
 # Python
 *.py[co]
 
-# Packages
+## Packages
 *.egg
 *.egg-info
 dist
@@ -33,3 +27,6 @@ pip-log.txt
 
 ## Translations
 *.mo
+
+# Google App Engine
+/.gaedata
