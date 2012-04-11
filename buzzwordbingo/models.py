@@ -10,6 +10,11 @@ class Buzzword(models.Model):
         return self.word
 
 class WinCondition(models.Model):
+    """
+    .. todo::
+
+      Validate the Python code that comes as text.
+    """
     name = models.CharField(max_length=50, unique=True)
     code = models.TextField(
         help_text='Code which determines whether the board is a winning board.')
