@@ -1,5 +1,11 @@
+""":mod:`buzzwordbingo.views` --- Application views
+"""
+
 from django.core.urlresolvers import reverse
 from djangorestframework.views import View
+
+# the docstring for this view will be shown in the HTML API browser
+# the docstring should be formatted in Markdown
 
 class BuzzwordBingoView(View):
     """The buzzword bingo REST API provides an interface to a collection of
@@ -12,6 +18,7 @@ class BuzzwordBingoView(View):
     """
     def get(self, request):
         return [{'name': 'Buzzwords', 'url': reverse('buzzword-root')},
-                {'name': 'Win Conditions', 'url': reverse('win-condition-root')},
-                {'name': 'Boards', 'url': reverse('board-root')},
+                {'name': 'Win Conditions',
+		 'url': reverse('win-condition-root')},
+                {'name': 'Boards', 'url': reverse('board-root')}
                 ]

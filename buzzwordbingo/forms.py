@@ -1,7 +1,12 @@
+""":mod:`buzzwordbingo.form` --- Forms for the HTML REST interface
+"""
+
 from django import forms
 from buzzwordbingo.models import Buzzword, Board, WinCondition
 
 class BoardForm(forms.ModelForm):
+    """Form assisting in the submission of a board that is able to stored in a
+    non-relational database."""
     class Meta:
         model = Board
         exclude = ('words', 'win_conditions')
